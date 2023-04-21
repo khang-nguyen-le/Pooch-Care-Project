@@ -13,15 +13,81 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- FontAwesome 6.4.0 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
-    <header>
-        <!-- place navbar here -->
+<body id="body">
+    <header class="main-header">
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Pooch Care</a>
+                    <button class="navbar-toggler ms-auto collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa fa-bars icon-expand"></i>
+                        <i class="fa fa-times icon-close"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-content">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item headerSearch">
+                                <a href="#search" class="btn btn__icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                                <div id="search" class="pop-overlay">
+                                    <div class="search__popup">
+                                        <form action="#" method="get" class="d-flex">
+                                            <input type="search" name="search" placeholder="Search ..." required
+                                                autofocus>
+                                            <button type="submit">Search</button>
+                                            <a class="close" href="#url">×</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- toggle switch for light and dark theme -->
+                    <button class="btn mobile-position" id="switchButton">
+                        <i class="fa-regular fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
+                    </button>
+                    <!-- toggle switch for light and dark theme -->
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
 
@@ -37,6 +103,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+
+    <!-- Switch Theme JS -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("body").classList.toggle("dark");
+        }
+    </script>
 </body>
 
 </html>
