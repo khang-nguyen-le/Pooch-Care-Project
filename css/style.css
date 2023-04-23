@@ -1,0 +1,233 @@
+.container .navbar h1 .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: green;
+}
+
+.container .navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+}
+
+.container .navbar .navbar-collapse .navbar-nav .nav-item {
+  padding: 0 15px;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding: 8px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+  color: black;
+}
+
+.container .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link {
+  color: green;
+}
+
+.banner {
+  margin-top: 90px;
+  background-image: url("../img/banner4.jpg ");
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.banner .container ul li a {
+  color: green;
+}
+
+.banner .container h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+.banner .container ul li {
+  color: white;
+  font-size: 18px;
+}
+
+.blog {
+  background-color: whitesmoke;
+}
+
+.blog .container .blog-header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.blog .container .blog-header p {
+  color: red;
+}
+
+.h1,
+h1 {
+  font-size: 2.5rem;
+}
+
+.blog .container .row .card .card-body .card-date span {
+  color: gray;
+}
+
+.blog .container .row .card .card-body .card-cmt {
+  display: flex;
+  color: gray;
+}
+
+.blog .container .row .card .card-body .card-cmt .card-cmt-left {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.blog .container .row .card .card-body .card-cmt .card-cmt-left i {
+  margin-right: 10px;
+}
+
+.blog .container .row .card .card-body .card-cmt .card-cmt-right {
+  display: flex;
+  align-items: center;
+}
+
+.blog .container .row .card .card-body .card-cmt .card-cmt-right i {
+  margin-right: 10px;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact .container .contact-header h1 {
+  color: black;
+}
+
+.contact .container .row .form-group {
+  display: flex;
+  margin-right: 10px;
+}
+
+.contact .container .row .form-group input {
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid white;
+  color: black;
+  background-color: lightgrey;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contact .container .row .form-group textarea {
+  padding: 30px 20px;
+  width: 100%;
+  border: 1px solid white;
+  background-color: lightgrey;
+  color: black;
+  overflow: hidden;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contact .container .row button {
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  float: right;
+  margin-top: 20px;
+}
+
+.contact .container .row .contact-right .address {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact .container .row .contact-right .address .address-icon {
+  margin-right: 20px;
+}
+
+.contact .container .row .contact-right .address .address-icon i {
+  color: green;
+}
+
+.contact .container .row .contact-right .address .address-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.contact .container .row .contact-right .address .address-content p {
+  line-height: 24px;
+  color: gray;
+  margin: 0;
+}
+
+.contact .container .row .contact-right .address .address-content p a {
+  color: gray;
+}
+
+.footer-background-color {
+  padding-top: 50px;
+  background-color: black;
+}
+
+.footer-background-color .container .row .footer-title {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.footer-background-color .container .row ul li {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.footer-background-color .container .row ul li a {
+  color: gray;
+}
+
+.footer-background-color .container .row .main-social-footer .social-icons {
+  display: flex;
+}
+
+.footer-background-color .container .row .main-social-footer .social-icons li {
+  margin-right: 20px;
+}
+
+.footer-background-color
+  .container
+  .row
+  .main-social-footer
+  .social-icons
+  li
+  a {
+  color: gray;
+}
+
+.footer-background-color .midd-footer .copy-footer {
+  padding: 40px;
+  color: gray;
+}
+
+.footer-background-color .midd-footer .copy-footer a {
+  color: red;
+}
