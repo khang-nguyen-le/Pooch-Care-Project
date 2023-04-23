@@ -434,6 +434,7 @@ footer a:hover {
 
 /************* RESPONSIVE *************/
 @media screen and (max-width: 1200px) {
+    /* CAROUSEL */
     .pcCarousel__info__bg h1{
         font-size: 52px;
         line-height: 60px;
@@ -533,6 +534,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) {
+    /* CAROUSEL */
     .pcCarousel__banner {
         min-height: 500px;
     }
@@ -545,6 +547,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
+    /* CAROUSEL */
     .pcCarousel__info__bg h1{
         font-size: 32px;
         line-height: 42px;
@@ -556,6 +559,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 440px) {
+    /* CAROUSEL */
     .pcCarousel__banner {
         min-height: 440px;
     }
