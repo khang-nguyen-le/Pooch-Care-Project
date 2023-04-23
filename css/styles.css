@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
     border: none;
     outline: none;
@@ -15,6 +14,14 @@ body {
     overflow-x: hidden;
     background-color: #fff;
     color: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
 }
 
 /* HEADER START */
@@ -180,15 +187,73 @@ header {
 }
 
 
-/****** Theme Switch Button *******/
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer__top {
+    padding: 64px 0;
+}
+
+.footer__item h5 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer__item ul {
+    padding: 0;
+}
+
+.footer__item ul li {
+    color: #696969;
+    margin-bottom: 12px;
+}
+
+.footer__item a  {
+    color: #696969;
+    transition: all .5s ease;
+}
+
+.footer__item a:hover {
+    color: white;
+}
+
+.footer__item .social__icon a {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+.footer__bottom p {
+    color: #696969;
+}
+
+.footer__bottom a {
+    color: #f53626;
+}
+
+/* Theme Switch Button */
 .btn:first-child:active,
 :not(.btn-check)+.btn:active {
     border-color: transparent;
 }
 
+
 #switchButton i {
     font-size: 24px;
 }
+
+/************* THEME *************/
 
 /* Light Theme */
 
@@ -294,7 +359,7 @@ header {
 
     .mobile-position {
         position: absolute;
-        right: 70px;
+        right: 55px;
         top: 20px;
     }
 
@@ -315,5 +380,13 @@ header {
     .dropdown-menu a.dropdown-item::before {
         display: none;
     }
-  
+}
+
+@media screen and (max-width: 767.98px) {
+    .footer__top {
+        padding-bottom: 0;
+    }
+    .footer__item{
+        margin-bottom: 40px;
+    }
 }
