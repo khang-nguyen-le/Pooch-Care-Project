@@ -93,7 +93,90 @@
         </div>
     </header>
     <main>
-        
+        <!-- CAROUSEL -->
+        <section class="pcCarousel">
+            <div class="pcCarousel__content">
+                <div class="owl-one owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="item">
+                                    <li>
+                                        <div class="pcCarousel__banner pcCarousel__banner--1">
+                                            <div class="pcCarousel__info">
+                                                <div class="container">
+                                                    <div class="pcCarousel__info__bg">
+                                                        <h1>Quality Things For Loving Pets</h1>
+                                                        <p>Keep Yout Pet Smiling</p>
+                                                        <a href="#" class="btn btn-white btn-white mt-4 mt-sm-5">Read More</a>
+                                                        <a href="#" class="btn btn-outline mt-4 mt-sm-5">Contact Us</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <li>
+                                        <div class="pcCarousel__banner pcCarousel__banner--2">
+                                            <div class="pcCarousel__info">
+                                                <div class="container">
+                                                    <div class="pcCarousel__info__bg">
+                                                        <h1>Delivering Happiness For Pets</h1>
+                                                        <p>For the love of pets </p>
+                                                        <a href="#" class="btn btn-white mt-4 mt-sm-5">Read More</a>
+                                                        <a href="#" class="btn btn-outline mt-4 mt-sm-5">Contact Us</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <li>
+                                        <div class="pcCarousel__banner pcCarousel__banner--1">
+                                            <div class="pcCarousel__info">
+                                                <div class="container">
+                                                    <div class="pcCarousel__info__bg">
+                                                        <h1>Quality Things For Loving Pets</h1>
+                                                        <p>Keep Yout Pet Smiling</p>
+                                                        <a href="#" class="btn btn-white mt-4 mt-sm-5">Read More</a>
+                                                        <a href="#" class="btn btn-outline mt-4 mt-sm-5">Contact Us</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <li>
+                                        <div class="pcCarousel__banner pcCarousel__banner--1">
+                                            <div class="pcCarousel__info">
+                                                <div class="container">
+                                                    <div class="pcCarousel__info__bg">
+                                                        <h1>Delivering Happiness For Pets</h1>
+                                                        <p>We Help Your Projects</p>
+                                                        <a href="#" class="btn btn-white mt-4 mt-sm-5">Read More</a>
+                                                        <a href="#" class="btn btn-outline mt-4 mt-sm-5">Contact Us</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer__top">
@@ -215,10 +298,38 @@
 
     <!-- Owl Carousel JS -->
     <script src="./js/owl.carousel.min.js"></script>
+
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
-        });
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true
+                    }
+                }
+            })
+        })
     </script>
 </body>
 
