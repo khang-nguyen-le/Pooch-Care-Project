@@ -87,6 +87,7 @@ h1 {
 .blog .container .row .card .card-body .card-cmt {
   display: flex;
   color: gray;
+  align-content: center;
 }
 
 .blog .container .row .card .card-body .card-cmt .card-cmt-left {
@@ -99,6 +100,10 @@ h1 {
   margin-right: 10px;
 }
 
+.blog .container .row .card .card-body .card-cmt .card-cmt-left p {
+  margin-top: 15px;
+}
+
 .blog .container .row .card .card-body .card-cmt .card-cmt-right {
   display: flex;
   align-items: center;
@@ -106,6 +111,10 @@ h1 {
 
 .blog .container .row .card .card-body .card-cmt .card-cmt-right i {
   margin-right: 10px;
+}
+
+.blog .container .row .card .card-body .card-cmt .card-cmt-right p {
+  margin-top: 15px;
 }
 
 .contact {
