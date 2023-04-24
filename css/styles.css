@@ -1,3 +1,4 @@
+/* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
 
 * {
@@ -28,6 +29,23 @@ p{
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+}
+
+.title .sub-title {
+    color: #f53626;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.title .main-title {
+    color: #000c04;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    text-transform: capitalize
+    ;
 }
 
 /* HEADER START */
@@ -302,6 +320,34 @@ header {
     background-size: cover;
 }
 
+/* ABOUT */
+.about__content {
+    max-width: 700px;
+}
+.about__content .about__desc {
+    color: #696969;
+    line-height: 28px;
+    font-size: 1.2em;
+    margin: 16px 0;
+}
+
+.about .btn--text {
+    margin-top: 16px;
+}
+
+.about .btn--text a {
+    font-weight: 600;
+    color: #000c04;
+    font-size: 17px;
+    transition: all .5s ease;
+    display: inline-block;
+    border-bottom: 2px solid #189a46;
+}
+
+.about .btn--text:hover a {
+    color: #189a46;
+}
+
 /* FOOTER */
 footer {
     background-color: #111;
@@ -377,11 +423,16 @@ footer a:hover {
 }
 
 /* Dark Theme */
-
+/* Dark Global */
 .dark#body {
     background-color: #151515;
 }
 
+.dark .title .main-title {
+    color: #ddd;
+}
+
+/* Dark Header  */
 .dark header {
     background-color: #151515;
 }
@@ -431,6 +482,14 @@ footer a:hover {
     background-color: transparent;
 }
 
+/* Dark About */
+ .dark .about__content .about__desc {
+    color: #afafaf;
+ }
+
+ .about .btn--text a {
+    color: #ddd;
+ }
 
 /************* RESPONSIVE *************/
 @media screen and (max-width: 1200px) {
@@ -444,6 +503,12 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 991.98px) {
+    /* GLOBAL */
+    .title .main-title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
     /* HEADER */
     header {
         height: auto;
@@ -505,6 +570,9 @@ footer a:hover {
     .pcCarousel__banner {
         margin-top: 77px;
     }
+
+    /* ABOUT */
+    
 }
 
 @media screen and (max-width: 767.98px) {
@@ -524,6 +592,12 @@ footer a:hover {
         background-position: center;
     }
 
+    /* ABOUT */
+    .about__content {
+        max-width: 540px;
+        padding: 0 !important;
+    }
+
     /* FOOTER */
     .footer__top {
         padding-bottom: 0;
@@ -534,6 +608,12 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) {
+    /* GLOBAL */
+    .title .main-title{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
     /* CAROUSEL */
     .pcCarousel__banner {
         min-height: 500px;
@@ -562,5 +642,13 @@ footer a:hover {
     /* CAROUSEL */
     .pcCarousel__banner {
         min-height: 440px;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    /* GLOBAL */
+    .title .main-title{
+        font-size: 27px;
+        line-height: 32px;
     }
 }
