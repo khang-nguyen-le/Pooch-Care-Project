@@ -24,6 +24,7 @@ a {
 p{
     font-size: 1.2em;
     line-height: 28px;
+    color: #696969;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -46,6 +47,24 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     text-transform: capitalize
     ;
+}
+
+.btn.btn--text {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.btn--text a {
+    font-weight: 600;
+    color: #000c04;
+    font-size: 17px;
+    transition: all .5s ease;
+    display: inline-block;
+    border-bottom: 2px solid #189a46;
+}
+
+.btn--text:hover a {
+    color: #189a46;
 }
 
 /* HEADER START */
@@ -325,28 +344,46 @@ header {
     max-width: 700px;
 }
 .about__content .about__desc {
-    color: #696969;
     line-height: 28px;
-    font-size: 1.2em;
     margin: 16px 0;
 }
 
-.about .btn--text {
-    margin-top: 16px;
+/* SERVICES */
+.services {
+    background-color: rgba(147, 107, 232, 0.05);
 }
 
-.about .btn--text a {
-    font-weight: 600;
-    color: #000c04;
-    font-size: 17px;
+.services__item {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
     transition: all .5s ease;
-    display: inline-block;
-    border-bottom: 2px solid #189a46;
 }
 
-.about .btn--text:hover a {
+.services__item:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.services__item h3 {
+    margin: 25px 0 15px;
+}
+
+.services__item h3 a {
+    font-size: 24px;
+    color: #000c04;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.services__item h3 a:hover {
     color: #189a46;
 }
+
+.services__icon i{
+    font-size: 30px;
+    color: #189a46;
+}
+
 
 /* FOOTER */
 footer {
@@ -394,9 +431,6 @@ footer a:hover {
     border-top: 1px solid rgba(103, 99, 99, 0.14);
 }
 
-.footer__bottom p {
-    color: #696969;
-}
 
 .footer__bottom a {
     color: #f53626;
@@ -406,7 +440,7 @@ footer a:hover {
 
 /************* THEME *************/
 
-/* Light Theme */
+/****** Light Theme ******/
 
 #switchButton .fa-moon {
     display: block;
@@ -422,7 +456,7 @@ footer a:hover {
     display: none;
 }
 
-/* Dark Theme */
+/****** Dark Theme ******/
 /* Dark Global */
 .dark#body {
     background-color: #151515;
@@ -431,6 +465,15 @@ footer a:hover {
 .dark .title .main-title {
     color: #ddd;
 }
+
+
+.dark .btn--text a {
+    color: #ddd;
+ }
+
+ .dark .btn--text a:hover {
+    color: #189a46;
+ }
 
 /* Dark Header  */
 .dark header {
@@ -487,9 +530,26 @@ footer a:hover {
     color: #afafaf;
  }
 
- .about .btn--text a {
+ /* Dark Service */
+.dark .services {
+    background-color: #222;
+}
+
+.dark .services__item {
+    background-color: #151515;
+}
+
+.dark .services__item:hover {
+    background-color: #222;
+}
+
+.dark .services__item h3 a {
     color: #ddd;
- }
+}
+
+.dark .services__item h3 a:hover {
+    color: #189a46;
+}
 
 /************* RESPONSIVE *************/
 @media screen and (max-width: 1200px) {
@@ -598,6 +658,11 @@ footer a:hover {
         padding: 0 !important;
     }
 
+    /* SERVICES */
+    .services__content {
+        padding: 0 !important;
+    }
+
     /* FOOTER */
     .footer__top {
         padding-bottom: 0;
@@ -623,6 +688,13 @@ footer a:hover {
         padding: 8px 30px;
         font-size: 16px;
         line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .services__col:nth-child(4),
+    .services__col:nth-child(5) {
+        margin-bottom: 30px;
     }
 }
 
