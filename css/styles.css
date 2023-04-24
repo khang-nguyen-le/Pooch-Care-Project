@@ -82,7 +82,7 @@ ul {
     padding: 0;
 }
 
-/* HEADER START */
+/************ HEADER START **************/
 header {
     background-color: white;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
@@ -253,12 +253,27 @@ header {
     border-color: transparent;
 }
 
-
 #switchButton i {
     font-size: 24px;
 }
 
-/* CAROUSEL */
+#switchButton .fa-moon {
+    display: block;
+    color: #404040;
+    transition: all .5s ease;
+}
+
+#switchButton .fa-moon:hover {
+    color: #189a46;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+/************ HEADER END **************/
+
+/************ CAROUSEL START **************/
 .pcCarousel__banner {
     min-height: calc(100vh - 90px);
     z-index: 0;
@@ -356,7 +371,9 @@ header {
     background-size: cover;
 }
 
-/* ABOUT */
+/************ CAROUSEL END **************/
+
+/************ ABOUT START **************/
 .about__content {
     max-width: 700px;
 }
@@ -366,7 +383,9 @@ header {
     margin: 16px 0;
 }
 
-/* SERVICES */
+/************ ABOUT END **************/
+
+/************ SERVICES START **************/
 .services {
     background-color: rgba(147, 107, 232, 0.05);
 }
@@ -402,7 +421,9 @@ header {
     color: #189a46;
 }
 
-/* OFFER */
+/************ SERVICES END **************/
+
+/************ OFFER START **************/
 .offer__img img {
     width: 100%;
 }
@@ -433,8 +454,30 @@ header {
     display: inline-block;
 }
 
+/************ OFFER END **************/
 
-/* FOOTER */
+/************ PROOF START **************/
+.proof {
+    background-color: #189a46;
+}
+
+.proof__item span {
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+}
+
+.proof__item p {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 400;
+    opacity: 0.8;
+}
+/************ PROOF END **************/
+
+/************ FOOTER START **************/
 footer {
     background-color: #111;
     color: white;
@@ -485,27 +528,10 @@ footer a:hover {
     color: #f53626;
 }
 
+/************ FOOTER END **************/
 
+/************* DARK MODE START *************/
 
-/************* THEME *************/
-
-/****** Light Theme ******/
-
-#switchButton .fa-moon {
-    display: block;
-    color: #404040;
-    transition: all .5s ease;
-}
-
-#switchButton .fa-moon:hover {
-    color: #189a46;
-}
-
-#switchButton .fa-sun {
-    display: none;
-}
-
-/****** Dark Theme ******/
 /* Dark Global */
 .dark#body {
     background-color: #151515;
@@ -609,7 +635,9 @@ footer a:hover {
     background-color: #222;
 }
 
-/************* RESPONSIVE *************/
+/************* DARK MODE END *************/
+
+/************* RESPONSIVE START*************/
 @media screen and (max-width: 1200px) {
 
     /* CAROUSEL */
@@ -698,6 +726,15 @@ footer a:hover {
 
     .pcCarousel__banner {
         margin-top: 77px;
+    }
+
+    /* PROOF */
+    .proof__item span {
+        font-size: 40px;
+    }
+
+    .proof__item p {
+        font-size: 18px;
     }
 
 }
@@ -800,4 +837,14 @@ footer a:hover {
         font-size: 27px;
         line-height: 32px;
     }
+
+    /* PROOF */
+    .proof__item span {
+        font-size: 35px;
+    }
+    .proof__item p {
+        font-size: 17px;
+    }
 }
+
+/************* RESPONSIVE END *************/
