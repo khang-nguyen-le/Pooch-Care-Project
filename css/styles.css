@@ -17,17 +17,27 @@ body {
     color: #212529;
 }
 
+body img {
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
 }
 
-p{
+p {
     font-size: 1.2em;
     line-height: 28px;
     color: #696969;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
@@ -35,6 +45,7 @@ h1, h2, h3, h4, h5, h6, p {
 .title .sub-title {
     color: #f53626;
     font-size: 18px;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 36px;
     text-transform: uppercase;
@@ -45,8 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 40px;
     line-height: 48px;
     font-weight: 600;
-    text-transform: capitalize
-    ;
+    text-transform: capitalize;
 }
 
 .btn.btn--text {
@@ -65,6 +75,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .btn--text:hover a {
     color: #189a46;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER START */
@@ -244,7 +259,7 @@ header {
 }
 
 /* CAROUSEL */
-.pcCarousel__banner{
+.pcCarousel__banner {
     min-height: calc(100vh - 90px);
     z-index: 0;
     display: grid;
@@ -253,7 +268,7 @@ header {
     margin-top: 90px;
 }
 
-.pcCarousel__banner::after{
+.pcCarousel__banner::after {
     content: "";
     position: absolute;
     top: 0;
@@ -321,7 +336,8 @@ header {
     bottom: 30px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background-color: #189a46;
     width: 30px;
 }
@@ -334,6 +350,7 @@ header {
     background-image: url(./../img/banner1.jpg);
     background-size: cover;
 }
+
 .pcCarousel__banner--2 {
     background-image: url(./../img/banner2.jpg);
     background-size: cover;
@@ -343,6 +360,7 @@ header {
 .about__content {
     max-width: 700px;
 }
+
 .about__content .about__desc {
     line-height: 28px;
     margin: 16px 0;
@@ -379,9 +397,40 @@ header {
     color: #189a46;
 }
 
-.services__icon i{
+.services__icon i {
     font-size: 30px;
     color: #189a46;
+}
+
+/* OFFER */
+.offer__img img {
+    width: 100%;
+}
+
+.offer__text .offer__desc {
+    font-size: 16px;
+    line-height: 24.5px;
+    margin: 15px 0 35px;
+}
+
+.offer__text ul li {
+    display: flex;
+    font-weight: 600;
+    margin: 18px 0;
+    align-items: center;
+}
+
+.offer__text .fa {
+    font-size: 10px;
+    color: #189a46;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: rgba(147, 107, 232, 0.05);
+    border-radius: 50%;
+    margin-right: 12px;
+    display: inline-block;
 }
 
 
@@ -413,7 +462,7 @@ footer a:hover {
     margin-bottom: 12px;
 }
 
-.footer__item a  {
+.footer__item a {
     color: #696969;
     transition: all .5s ease;
 }
@@ -469,11 +518,11 @@ footer a:hover {
 
 .dark .btn--text a {
     color: #ddd;
- }
+}
 
- .dark .btn--text a:hover {
+.dark .btn--text a:hover {
     color: #189a46;
- }
+}
 
 /* Dark Header  */
 .dark header {
@@ -526,11 +575,11 @@ footer a:hover {
 }
 
 /* Dark About */
- .dark .about__content .about__desc {
+.dark .about__content .about__desc {
     color: #afafaf;
- }
+}
 
- /* Dark Service */
+/* Dark Service */
 .dark .services {
     background-color: #222;
 }
@@ -551,20 +600,33 @@ footer a:hover {
     color: #189a46;
 }
 
+/* Dark Offer */
+.dark .offer__text ul li {
+    color: #ddd;
+}
+
+.dark .offer__text .fa {
+    background-color: #222;
+}
+
 /************* RESPONSIVE *************/
 @media screen and (max-width: 1200px) {
+
     /* CAROUSEL */
-    .pcCarousel__info__bg h1{
+    .pcCarousel__info__bg h1 {
         font-size: 52px;
         line-height: 60px;
     }
+
     .pcCarousel__info__bg p {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 991.98px) {
+
     /* GLOBAL */
-    .title .main-title{
+    .title .main-title {
         font-size: 35px;
         line-height: 40px;
     }
@@ -574,16 +636,23 @@ footer a:hover {
         height: auto;
     }
 
-    .navbar .navbar-toggler.collapsed .icon-expand{
+    .navbar .navbar-toggler {
+        padding: 0;
+    }
+
+    .navbar .navbar-toggler.collapsed .icon-expand {
         display: block;
     }
-    .navbar .navbar-toggler.collapsed .icon-close{
+
+    .navbar .navbar-toggler.collapsed .icon-close {
         display: none;
     }
-    .navbar .navbar-toggler .icon-expand{
+
+    .navbar .navbar-toggler .icon-expand {
         display: none;
     }
-    .navbar .navbar-toggler .icon-close{
+
+    .navbar .navbar-toggler .icon-close {
         display: block;
     }
 
@@ -622,7 +691,7 @@ footer a:hover {
     }
 
     /* CAROUSEL */
-    .pcCarousel__info__bg h1{
+    .pcCarousel__info__bg h1 {
         font-size: 50px;
         line-height: 55px;
     }
@@ -631,11 +700,10 @@ footer a:hover {
         margin-top: 77px;
     }
 
-    /* ABOUT */
-    
 }
 
 @media screen and (max-width: 767.98px) {
+
     /* CAROUSEL  */
     .pcCarousel__info__bg p {
         font-size: 16px;
@@ -648,6 +716,7 @@ footer a:hover {
     .pcCarousel__banner--1 {
         background-position: center;
     }
+
     .pcCarousel__banner--2 {
         background-position: center;
     }
@@ -667,14 +736,16 @@ footer a:hover {
     .footer__top {
         padding-bottom: 0;
     }
-    .footer__item{
+
+    .footer__item {
         margin-bottom: 40px;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     /* GLOBAL */
-    .title .main-title{
+    .title .main-title {
         font-size: 32px;
         line-height: 38px;
     }
@@ -689,9 +760,12 @@ footer a:hover {
         font-size: 16px;
         line-height: 24px;
     }
+
+
 }
 
 @media screen and (max-width: 575.98px) {
+
     .services__col:nth-child(4),
     .services__col:nth-child(5) {
         margin-bottom: 30px;
@@ -699,8 +773,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
+
     /* CAROUSEL */
-    .pcCarousel__info__bg h1{
+    .pcCarousel__info__bg h1 {
         font-size: 32px;
         line-height: 42px;
     }
@@ -711,6 +786,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 440px) {
+
     /* CAROUSEL */
     .pcCarousel__banner {
         min-height: 440px;
@@ -718,8 +794,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 378px) {
+
     /* GLOBAL */
-    .title .main-title{
+    .title .main-title {
         font-size: 27px;
         line-height: 32px;
     }
