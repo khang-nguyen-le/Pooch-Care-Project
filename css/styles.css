@@ -477,6 +477,129 @@ header {
 }
 /************ PROOF END **************/
 
+/************ PLANS START **************/
+.plans {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.plans .sub-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.plans__items {
+    margin: 0 5% auto;
+}
+
+.plans__col {
+    align-self: center;
+}
+
+.plans__card--1, .plans__card--2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.plans__card--1 {
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    position: relative;
+    z-index: 1;
+}
+
+.plans__card--2 {
+    padding: 3.5em 2.5em;
+}
+
+.plans__card--1.active .plans__card__top {
+    background-color: #189a46;
+    padding: 3em 2.5em .5em;
+}
+
+.plans .card__saving {
+    background-color: #fff;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    color: #189a46;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.plans .card__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000c04;
+}
+
+
+.card__monthPrice {
+    margin: 15px 0 20px;
+}
+
+.card__monthPrice .price {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #189a46;
+}
+
+
+.card__monthPrice .month {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #999;
+}
+
+.plans sup {
+    font-size: 25px;
+    font-weight: 600;
+    color: #189a46;
+}
+
+.plans__card--1.active .plans__card__bottom{
+    padding: 2em 2.5em 3.5em;
+}
+
+.plans .plans__card__bottom li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 5px;
+    padding-top: 6px;
+}
+
+.plans .buy-button {
+    margin-top: 2em;
+}
+
+.plans .buy-button .btn-primary {
+    background-color: #189a46;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 12px 35px;
+    transition: all .5s;
+}
+
+.plans .buy-button .btn-primary:hover {
+    background-color: #116E32;
+}
+
+/************ PLANS END **************/
+
 /************ FOOTER START **************/
 footer {
     background-color: #111;
@@ -635,6 +758,23 @@ footer a:hover {
     background-color: #222;
 }
 
+/* Dark Plans */
+.dark .plans {
+    background-color: #222;
+}
+
+.dark .plans__card--1, .dark .plans__card--2 {
+    background-color: #151515;
+}
+
+.dark .card__title {
+    color: #ddd;
+}
+
+.dark .plans__card__bottom li {
+    color: #afafaf;
+}
+
 /************* DARK MODE END *************/
 
 /************* RESPONSIVE START*************/
@@ -737,6 +877,13 @@ footer a:hover {
         font-size: 18px;
     }
 
+    /* PLANS */
+    .plans__items {
+        max-width: 50%;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -767,6 +914,11 @@ footer a:hover {
     /* SERVICES */
     .services__content {
         padding: 0 !important;
+    }
+
+    /* PLANS */
+    .plans__items {
+        max-width: 60%;
     }
 
     /* FOOTER */
@@ -807,6 +959,11 @@ footer a:hover {
     .services__col:nth-child(5) {
         margin-bottom: 30px;
     }
+
+    /* PLANS */
+    .plans__items {
+        max-width: 70%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -819,6 +976,11 @@ footer a:hover {
 
     .pcCarousel__banner {
         min-height: 480px;
+    }
+
+    /* PLANS */
+    .plans__items {
+        max-width: 80%;
     }
 }
 
@@ -844,6 +1006,11 @@ footer a:hover {
     }
     .proof__item p {
         font-size: 17px;
+    }
+
+    /* PLANS */
+    .plans__items {
+        max-width: 100%;
     }
 }
 
