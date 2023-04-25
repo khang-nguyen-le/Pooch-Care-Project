@@ -273,209 +273,103 @@ header {
 
 /************ HEADER END **************/
 
-/************ CAROUSEL START **************/
-.pcCarousel__banner {
-    min-height: calc(100vh - 90px);
-    z-index: 0;
-    display: grid;
-    align-items: center;
+/************ SERVICCER START **************/
+.services {
+    background-image: url(../img/banner-servic.jpg);
+    color: white;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 25px; */
     position: relative;
-    margin-top: 90px;
+    padding: 80px 0 40px;
 }
-
-.pcCarousel__banner::after {
+.services::before {
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: #0c0c0c;
-    opacity: .6;
-    z-index: -1;
+    background-color:rgba(0,0,0,.501) ;
 }
-
-.pcCarousel__info {
-    position: relative;
-}
-
-.pcCarousel__info__bg {
-    max-width: 700px;
-    color: #fff;
-}
-
-.owl-item:nth-child(even) .pcCarousel__info__bg {
-    margin-left: auto;
-}
-
-.pcCarousel__info__bg h1 {
+.services__content i {
+    padding: 0px 10px;
     font-weight: 600;
-    font-size: 66px;
-    line-height: 74px;
+    font-size: 12px;
+    vertical-align: middle;
 }
-
-.pcCarousel__info__bg p {
-    line-height: 30px;
+.services__content a {
+font-size: 20px;
+color: #189a46;
 }
-
-.pcCarousel__info__bg .btn {
-    padding: 12px 35px;
-    font-size: 18px;
-    line-height: 28px;
-    border-radius: 10px;
-}
-
-.pcCarousel__info__bg .btn-white {
-    color: #189a46;
-    background-color: white;
-    margin-right: 8px;
-    transition: all .5s ease;
-}
-
-.pcCarousel__info__bg .btn-white:hover,
-.pcCarousel__info__bg .btn-outline:hover {
-    background-color: #189a46;
-    color: white;
-}
-
-.pcCarousel__info__bg .btn-outline {
-    color: white;
-    border: 2px solid white;
-    transition: all .5s ease;
-}
-
-.owl-dots {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 30px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #189a46;
-    width: 30px;
-}
-
-.pcCarousel .owl-theme .owl-nav {
-    display: none;
-}
-
-.pcCarousel__banner--1 {
-    background-image: url(./../img/banner1.jpg);
-    background-size: cover;
-}
-
-.pcCarousel__banner--2 {
-    background-image: url(./../img/banner2.jpg);
-    background-size: cover;
-}
-
-/************ CAROUSEL END **************/
-
-/************ ABOUT START **************/
-.about__content {
-    max-width: 700px;
-}
-
-.about__content .about__desc {
-    line-height: 28px;
-    margin: 16px 0;
-}
-
-/************ ABOUT END **************/
-
-/************ SERVICES START **************/
-.services {
-    background-color: rgba(147, 107, 232, 0.05);
-}
-
-.services__item {
-    background-color: white;
-    padding: 40px 30px;
-    border-radius: 10px;
-    transition: all .5s ease;
-}
-
-.services__item:hover {
-    background-color: rgba(147, 107, 232, 0.05);
-}
-
-.services__item h3 {
-    margin: 25px 0 15px;
-}
-
-.services__item h3 a {
-    font-size: 24px;
-    color: #000c04;
-    font-weight: 600;
-    transition: all .5s ease;
-}
-
-.services__item h3 a:hover {
-    color: #189a46;
-}
-
-.services__icon i {
-    font-size: 30px;
-    color: #189a46;
-}
-
-/************ SERVICES END **************/
-
-/************ OFFER START **************/
-.offer__img img {
-    width: 100%;
-}
-
-.offer__text .offer__desc {
-    font-size: 16px;
-    line-height: 24.5px;
-    margin: 15px 0 35px;
-}
-
-.offer__text ul li {
-    display: flex;
-    font-weight: 600;
-    margin: 18px 0;
-    align-items: center;
-}
-
-.offer__text .fa {
-    font-size: 10px;
-    color: #189a46;
-    line-height: 24px;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    background-color: rgba(147, 107, 232, 0.05);
-    border-radius: 50%;
-    margin-right: 12px;
-    display: inline-block;
-}
-
-/************ OFFER END **************/
-
-/************ PROOF START **************/
-.proof {
-    background-color: #189a46;
-}
-
-.proof__item span {
-    font-weight: 600;
+main h1 {
     font-size: 50px;
-    color: white;
+    font-weight: 700;
+    line-height: 60px;
+}
+.services__content span {
+    font-size: 20px;
+    
+}
+.services__content {
+    position: relative;
+    z-index: 2;
+}
+/* ----------DOG----------- */
+.dog {
+    background-color: white;
+    border-bottom: 1px solid #f0f3f0;
+    padding: 50px 0;
+   
+   }
+   .dog__content {
+    display: flex;
+    
+    align-items: center
+    
+   }
+   div {
+display: block;
+   }
+.dog__img img {
+width: 100%;
+}
+.dog__img {
+    border-radius: 10px;
+    margin: 0 30px;
+    
 }
 
-.proof__item p {
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: capitalize;
-    color: white;
+.sub-title {
+    font-size: 18px;
     font-weight: 400;
-    opacity: 0.8;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
 }
-/************ PROOF END **************/
+.ple {
+    padding-left: 3rem;
+}
+.pri {
+    padding-right: 3rem;
+}
+.dog__content .dog__text .read {
+    font-size: 20px;
+    padding: 0;
+    border-bottom: 2px solid #189a46;
+    color: #000c04;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.dog__content .dog__text .read:hover {
+    color: #189a46;
+}
 
 /************ FOOTER START **************/
 footer {
