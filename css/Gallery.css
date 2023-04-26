@@ -273,8 +273,8 @@ header {
 
 /************ HEADER END **************/
 
-/************ SERVICCER START **************/
-.services {
+/************ BANNER START **************/
+.banner {
     background-image: url(../img/banner-servic.jpg);
     color: white;
     text-align: center;
@@ -285,7 +285,7 @@ header {
     position: relative;
     padding: 80px 0 40px;
 }
-.services::before {
+.banner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -294,83 +294,69 @@ header {
     width: 100%;
     background-color:rgba(0,0,0,.501) ;
 }
-.services__content i {
+.banner__content i {
     padding: 0px 10px;
     font-weight: 600;
     font-size: 12px;
     vertical-align: middle;
 }
-.services__content a {
+.banner__content a {
 font-size: 20px;
 color: #189a46;
 }
 main h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 60px;
 }
-.services__content span {
+.banner__content span {
     font-size: 20px;
     
 }
-.services__content {
+.banner__content {
     position: relative;
     z-index: 2;
 }
-/* ----------DOG----------- */
-.dog {
-    background-color: white;
-    border-bottom: 1px solid #f0f3f0;
-    padding: 50px 0;
-   
-   }
-   .dog__content {
-    display: flex;
-   
-    align-items: center 
-    
-   }
-   div {
-display: block;
-   }
-.dog__img img {
-width: 100%;
-}
-.dog__img {
-    border-radius: 10px;
-    margin: 0 30px;
-    
-}
-
+/* -------GALLERY----------- */
 .sub-title {
     font-size: 18px;
     font-weight: 400;
+    text-transform: uppercase;
     line-height: 2em;
     letter-spacing: 1px;
     color: #f53626;
 }
-.ple {
-    padding-left: 3rem;
+.gallery__item figure {
+    position: relative;
+    overflow: hidden;
 }
-.pri {
-    padding-right: 3rem;
+.gallery__item figure::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    top: 0;
+    left: -100%;
+    display: block;
+    width: 50%;
+    height: 100%;
+    transform: skewX(-25deg);
+   
 }
-.dog__content .dog__text .read {
-    font-size: 20px;
-    padding: 0;
-    border-bottom: 2px solid #189a46;
-    color: #000c04;
-    transition: all 0.3s;
-    font-weight: 600;
-    border-radius: 0;
-    margin-top: 20px;
-    display: inline-block;
-    text-transform: capitalize;
+.gallery__item figure:hover::before {
+    -webkit-animation: shine 0.75s;
+    animation: shine 0.75s;
 }
-.dog__content .dog__text .read:hover {
-    color: #189a46;
-}
-
+@-webkit-keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  @keyframes shine {
+    100% {
+      left: 100%;
+    }
+  }
 /************ FOOTER START **************/
 footer {
     background-color: #111;

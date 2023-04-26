@@ -7,7 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="img/shutterstock_1585340284.jpg" type="image/x-icon">
-
+    <!-- link lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lightgallery.min.css">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lg-transitions.min.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -22,7 +25,7 @@
     <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/Gallery.css">
 </head>
 
 <body id="body">
@@ -93,87 +96,100 @@
         </div>
     </header>
     <main>
-        <!-- SERVICER -->
-    <section class="services ">
+        <!-- BANNER -->
+        <section class="banner">
        
-            <div class="container services__content py-sm-5 py-4">
-                <h1 class="pt-5">Services</h1>
+            <div class="container banner__content py-sm-5 py-4">
+                <h1 class="pt-5">Gellery</h1>
             
             <div class="mt-2">
             <a href="">Home</a>
-                <span> <i class="fa-regular fa-angles-right"></i>Services Pages</span>
+                <span> <i class="fa-regular fa-angles-right"></i>Gallery Pages</span>
              </div>   
             </div>
     </section>
-    <!-- dog1 -->
-    <section class="dog ">
-        <div class="container dog__content py-lg-5 row ">
-            <div class="dog__img col-lg-6 pr-lg-4 col-12">
-               <a href=""> <img src="./img/dog1.jpg" alt="" class="img-fluid mb-lg-0 mb-4"></a>
-            </div>
-            <div class="dog__text col-lg-6 text-left pl-lg-5 ple col-12" >
-                <p class="sub-title">01</p>
-                <h1>Dog Walking</h1>
-                <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
-                <a href="" class="read">Read more</a>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- dog2 -->
-    <section class="dog">
-        <div class="container dog__content py-lg-5">
-            <div class="dog__text col-lg-6 text-left pl-lg-5 pri">
-                <p class="sub-title">02</p>
-                <h1>Dog Training</h1>
-                <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
-                <a href="" class="read">Read more</a>
-            </div>
-            
-                <div class="dog__img col-lg-6 pr-lg-4">
-                   <a href=""> <img src="./img/dog2.jpg" alt="" class="img-fluid mb-lg-0 mb-4"></a>
+        <!-- Gallery -->
+        <section class="gallery py-5">
+            <div class="gallery__gallery py-md-4 py-3">
+              <div class="container gallery__content">
+                <div class="gallery__top text-center mx-auto">
+                
+                  <h6 class="sub-title">View Gallery</h6>
+                  <h1 class="hny-title">Latest Gallery</h1>
+          
                 </div>
-
-
-        </div>
-
-    </section>
-    <!-- dog3 -->
-    <section class="dog">
-        <div class="container dog__content py-lg-5">
-            <div class="dog__img col-lg-6 pr-lg-4">
-                <a href=""> <img src="./img/dog3.jpg" alt="" class="img-fluid mb-lg-0 mb-4"></a>
+                <div class="gallery__bottom row mt-lg-5 mt-4">
+          <!-- item1 -->
+                  <div class="gallery__item col-md-4 hover14">
+          
+                    <a href="./img/dog1.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog1.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                    <a href="./img/dog2.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog2.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                    <a href="./img/dog7.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog7.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                  </div>
+                  <!-- item2 -->
+                  <div class="gallery__item col-md-4 hover14">
+          
+                    <a href="./img/dog3.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog3.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+                    
+                    <a href="./img/dog4-1.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog4-1.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                    <a href="./img/dog8.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog8.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                  </div>
+          <!-- item3 -->
+                  <div class="gallery__item col-md-4 hover14">
+          
+                    <a href="./img/dog4.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog4.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                    <a href="./img/dog6.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog6.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                    <a href="./img/dog9.jpg" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                      <figure>
+                        <img src="./img/dog9.jpg" alt="product" class="img-fluid">
+                      </figure>
+                    </a>
+          
+                  </div>
+          
+                </div>
+              </div>
             </div>
-            <div class="dog__text col-lg-6 text-left pr-lg-5 ple" >
-                <p class="sub-title">03</p>
-                <h1>Dog Boarding</h1>
-                <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
-                <a href="" class="read">Read more</a>
-            </div>
-
-        </div>
-        
-    </section>
-    <!-- dog4 -->
-    <section class="dog">
-        <div class="container dog__content py-lg-5">
-           
-            <div class="dog__text photo-6-inf-right col-lg-6 text-left pl-lg-5 pri">
-                <p class="sub-title">04</p>
-                <h1>Dog Transportation</h1>
-                <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
-                <a href="" class="read">Read more</a>
-            </div>
-            <div class="dog__img col-lg-6 pr-lg-4">
-               <a href=""> <img src="./img/dog4-1.jpg" alt="" class="img-fluid mb-lg-0 mb-4"> </a>
-            </div>
-
-        </div>
-
-    </section>
-        <!-- ABOUT -->
-        
+          </section>
        
     </main>
     <footer>
@@ -298,6 +314,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
     </script>
 
+<!--Đường Dẫn CDN Javascript lightbox-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/js/lightgallery-all.min.js"></script>
+ <script>$(document).ready(function() {
+    $("#lightgallery").lightGallery(); 
+});
+</script>
+
     <!-- Owl Carousel JS -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
@@ -338,6 +362,7 @@
     <script>
         $('.counter').countUp();
     </script>
+
 </body>
 
 </html>
