@@ -77,6 +77,17 @@ p {
     color: #189a46;
 }
 
+.btn-style {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    transition: all .3 ease-in;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: none;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -582,19 +593,13 @@ header {
     margin-top: 2em;
 }
 
-.plans .buy-button .btn-primary {
+.plans .buy-button .btn {
     background-color: #189a46;
     color: white;
-    border-color: transparent;
-    border-radius: 10px;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    padding: 12px 35px;
     transition: all .5s;
 }
 
-.plans .buy-button .btn-primary:hover {
+.plans .buy-button .btn:hover {
     background-color: #116E32;
 }
 
@@ -713,6 +718,36 @@ header {
 }
 
 /************ TESTIMONIALS END **************/
+
+/************ SUBSCRIBE START **************/
+.subscribe__content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.subscribe .form-control {
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 10px;
+    flex-basis: 70%;
+}
+
+.subscribe .form-control:focus{
+    border-color: #189a46;
+    box-shadow: none;
+}
+
+.subscribe button {
+    background-color: #189a46;
+    flex-basis: 27%;
+    transition: all .5s;
+}
+
+.subscribe button:hover {
+    background-color: #116E32 !important;
+    border-color: none !important;
+}
+/************ SUBSCRIBE END **************/
 
 /************ FOOTER START **************/
 footer {
@@ -1051,6 +1086,12 @@ footer a:hover {
     /* PLANS */
     .plans__items {
         max-width: 60%;
+    }
+
+    /* SUBSCRIBE */
+    .subscribe button {
+        margin-top: 16px;
+        width: 100%;
     }
 
     /* FOOTER */
