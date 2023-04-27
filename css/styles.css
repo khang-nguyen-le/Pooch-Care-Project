@@ -642,8 +642,77 @@ header {
     width: 100%;
     height: 500px;
 }
-
 /************ VIDEO END **************/
+
+/************ TESTIMONIALS START **************/
+.testimonials {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.testimonials__carousel {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.testimonial__card{
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
+}
+
+.testimonial__card blockquote {
+    margin: 0 1.5em 1.5em;
+}
+
+.testimonial__card blockquote q{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696969;
+}
+
+.testimonial__card blockquote q::before {
+    font-size: 50px;
+    color: #189a46;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    line-height: .8;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.testi__author {
+    display: flex;
+    align-items: center;
+}
+
+.testi__author .testi__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testi__name h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testi__name p {
+    font-size: 17px;
+    color: #777;
+    opacity: .8;
+}
+
+.testimonials .owl-two.owl-carousel.owl-theme .owl-dots {
+    position: inherit;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+/************ TESTIMONIALS END **************/
 
 /************ FOOTER START **************/
 footer {
@@ -825,6 +894,19 @@ footer a:hover {
     color: #afafaf;
 }
 
+/* Dark Testimonials */
+.dark .testimonials{
+    background-color: #222;
+}
+
+.dark .testimonial__card {
+    background-color: #151515;
+}
+
+.dark .testi__author h6 {
+    color: #ddd;
+}
+
 /************* DARK MODE END *************/
 
 /************* RESPONSIVE START*************/
@@ -1004,7 +1086,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 575.98px) {
-
+    /* SERVICES */
     .services__col:nth-child(4),
     .services__col:nth-child(5) {
         margin-bottom: 30px;
@@ -1013,6 +1095,11 @@ footer a:hover {
     /* PLANS */
     .plans__items {
         max-width: 70%;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials .owl-two.owl-carousel.owl-theme .owl-dots {
+        margin-top: 25px;
     }
 }
 
