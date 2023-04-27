@@ -326,7 +326,6 @@ main h1 {
    }
    .dog__content {
     display: flex;
-   
     align-items: center 
     
    }
@@ -338,9 +337,8 @@ width: 100%;
 }
 .dog__img {
     border-radius: 10px;
-    margin: 0 30px;
-    
-}
+
+    }
 
 .sub-title {
     font-size: 18px;
