@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
 
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -405,7 +410,7 @@
                                     <h3 class="card__title">Free Package</h3>
                                     <div class="card__monthPrice">
                                         <sup>$</sup>
-                                        <spa class="price"n>0</spa>
+                                        <spa class="price" n>0</spa>
                                         <span class="month">/month</span>
                                     </div>
                                 </div>
@@ -473,6 +478,32 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VIDEO -->
+        <section class="video py-5">
+            <div class="container-sm">
+                <div class="video__content py-lg-5 text-center">
+                    <div class="title">
+                        <p class="sub-title">BETTER PET NUTRITION.</p>
+                        <h2 class="main-title">The Finest Fresh Food And All Your Pet Needs.</h2>
+                    </div>
+                    <p class="title-desc mt-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec
+                        tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+                        explicabo officia.
+                    </p>
+                    <div class="video__frame mt-5">
+
+                        <img src="./img/banner2.jpg" alt="video" class="img-fluid">
+                        <a href="#video" class="btnPlay play-video">
+                            <i class="fa fa-play"></i>
+                        </a>
+                        <div id="video" class="video-popup mfp-hide">
+                            <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -640,6 +671,32 @@
     <script src="./js/jquery.countup.min.js"></script>
     <script>
         $('.counter').countUp();
+    </script>
+
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.play-video').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            closeBtnInside: true,
+            fixedContentPos: true,
+            overflowY: 'auto',
+            removalDelay: 300,
+            closeOnBgClick: true,
+        });
+
+        $('.video-popup').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            closeBtnInside: true,
+            fixedContentPos: true,
+            overflowY: 'auto',
+            removalDelay: 300,
+            closeOnBgClick: true,
+        })
     </script>
 </body>
 
