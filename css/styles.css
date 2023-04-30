@@ -329,6 +329,8 @@ header {
 
 .pcCarousel__info__bg p {
     line-height: 30px;
+    color: white;
+    opacity: .9;
 }
 
 .pcCarousel__info__bg .btn {
@@ -856,6 +858,54 @@ footer a:hover {
 
 /************ BREADCRUMB END **************/
 
+/************ INTRODUCTION START **************/
+.intro h3 {
+    font-size: 22px;
+    color: #000c04;
+    line-height: 46px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+/************ INTRODUCTION END **************/
+
+/************ HISTORY START **************/
+.history {
+    background-image: url(./../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.history::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 4, 8, 1);
+    opacity: .6;
+    z-index: -1;;
+}
+.history__content {
+    max-width: 640px;
+    margin-left: auto;
+}
+.history__content p {
+    color: white;
+    opacity: .7;
+}
+.history .milestones {
+    margin-top: 40px;
+}
+.history h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+/************ HISTORY END **************/
+
 /************* DARK MODE START *************/
 
 /* Dark Global */
@@ -994,6 +1044,16 @@ footer a:hover {
 
 .dark .testi__author h6 {
     color: #ddd;
+}
+
+/* Dark Intro */
+.dark .intro h3 {
+    color: #ddd;
+}
+
+/* Dark Intro */
+.dark .intro__desc p {
+    color: #afafaf;
 }
 
 /************* DARK MODE END *************/
@@ -1182,7 +1242,20 @@ footer a:hover {
         line-height: 24px;
     }
 
+    /* INTRODUCTION */
+    .intro h3 {
+        font-size: 20px;
+    }
 
+    .intro__desc p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* HISTORY */
+    .history p{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -1256,6 +1329,11 @@ footer a:hover {
     /* PLANS */
     .plans__items {
         max-width: 100%;
+    }
+
+    /* BREADCRUMB */
+    .pcBreadcrumb .breadcrumb-item {
+        font-size: 1em;
     }
 }
 
