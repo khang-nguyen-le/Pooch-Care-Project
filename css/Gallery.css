@@ -317,6 +317,9 @@ main h1 {
     position: relative;
     z-index: 2;
 }
+.banner__content h1 {
+    font-size: 50px;
+}
 /* -------GALLERY----------- */
 .sub-title {
     font-size: 18px;

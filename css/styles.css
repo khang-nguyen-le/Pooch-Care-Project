@@ -320,15 +320,34 @@ main h1 {
 /* ----------DOG----------- */
 .dog {
     background-color: white;
-    border-bottom: 1px solid #f0f3f0;
-    padding: 50px 0;
+    
    
    }
    .dog__content {
     display: flex;
-    align-items: center 
+    align-items: center ;
+    border-bottom: 1px solid #f0f3f0;
+    padding: 50px 0;
     
-   }
+}
+.row {
+    align-items: center;
+}
+   
+      
+   @media (max-width: 992px){
+   .two-order {
+    order: 2;
+   }}
+   @media (min-width: 992px){
+    .pl-lg-5, .px-lg-5 {
+    padding-left: 3rem !important;
+}}
+    @media (min-width: 992px){
+    .pr-lg-4, .px-lg-4 {
+    padding-right: 1.5rem !important;
+}}
+  
    div {
 display: block;
    }
