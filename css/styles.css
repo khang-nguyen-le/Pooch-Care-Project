@@ -93,6 +93,7 @@ ul {
     padding: 0;
 }
 
+/************************ HOMEPAGE **************************/
 /************ HEADER START **************/
 header {
     background-color: white;
@@ -101,6 +102,7 @@ header {
     display: grid;
     align-items: center;
     position: fixed;
+    top: 0;
     z-index: 99;
     width: 100%;
 }
@@ -802,6 +804,58 @@ footer a:hover {
 
 /************ FOOTER END **************/
 
+/************************ ABOUT **************************/
+/************ BREADCRUMB START **************/
+.pcBreadcrumb {
+    background-image: url(./../img/banner4.jpg);
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    margin-top: 90px;
+    display: grid;
+}
+
+.pcBreadcrumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    opacity: .6;
+    z-index: -1;
+}
+.pcBreadcrumb__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pcBreadcrumb__content h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+}
+.pcBreadcrumb .breadcrumb-item {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: white;
+    padding-left: 0;
+}
+.pcBreadcrumb .breadcrumb-item a{
+    color: #189a46;
+}
+.pcBreadcrumb .breadcrumb-item a:hover {
+    color: #116E32;
+}
+
+/************ BREADCRUMB END **************/
+
 /************* DARK MODE START *************/
 
 /* Dark Global */
@@ -1051,6 +1105,11 @@ footer a:hover {
         gap: 20px;
     }
 
+    /* BREADCRUMB */
+    .pcBreadcrumb {
+        margin-top: 77px;
+    }
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1141,6 +1200,14 @@ footer a:hover {
     /* TESTIMONIALS */
     .testimonials .owl-two.owl-carousel.owl-theme .owl-dots {
         margin-top: 25px;
+    }
+
+    /* BREADCRUM */
+    .pcBreadcrumb {
+        height: 200px;
+    }
+    .pcBreadcrumb__content h1 {
+        font-size: 34px;
     }
 }
 
