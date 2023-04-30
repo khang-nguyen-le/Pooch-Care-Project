@@ -1,3 +1,16 @@
+/* Global CSS */
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Header CSS */
+
 .container .navbar h1 .navbar-brand {
   margin: 0;
   padding: 0;
@@ -16,7 +29,7 @@
 }
 
 .container .navbar .navbar-collapse .navbar-nav .nav-item {
-  padding: 0 15px;
+  padding: 0 12px;
   transition: all 0.5s ease;
   position: relative;
   cursor: pointer;
@@ -32,14 +45,234 @@
   color: black;
 }
 
-.container .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link {
+.container .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::before {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: green;
+  left: 0;
+  bottom: 0;
+}
+
+.container
+  .navbar
+  .navbar-collapse
+  .navbar-nav
+  .nav-item
+  .nav-link:hover::before {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.container .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: green;
 }
 
-ol,
-ul {
-  list-style: none;
+button.navbar-toggler .icon-close {
+  display: block;
 }
+
+button.navbar-toggler .icon-expand {
+  display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+  display: block;
+}
+
+.dropdown {
+  margin-top: 9px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.dropdown .dropbtn {
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+  padding: 8px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  position: relative;
+  color: black;
+}
+
+.dropdown .dropbtn::before {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: green;
+  left: 0;
+  bottom: 0;
+}
+
+.dropdown .dropbtn:hover::before {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.dropdown .dropbtn:hover {
+  color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 250px;
+  z-index: 1;
+  top: 100%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+
+/* Night Mode CSS */
+
+i {
+  font-size: 24px;
+}
+
+.fa-moon {
+  display: block;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.fa-moon:hover {
+  color: green;
+}
+
+.fa-sun {
+  display: none;
+  color: lightgrey;
+}
+
+.dark#body {
+  background-color: black;
+}
+
+.dark .btn--text a {
+  color: white;
+}
+
+.dark .btn--text a:hover {
+  color: green;
+}
+
+.dark header {
+  background-color: black;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: lightgray;
+  transition: all 0.5s ease;
+}
+
+.dark #switchButton .fa-sun:hover {
+  color: green;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+.dark .container .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.dark .nav-link.active {
+  color: green;
+}
+
+.dark .nav-link:hover {
+  color: green;
+}
+
+.dark .dropdown-content {
+  color: white;
+}
+
+.dark .dropdown .dropbtn {
+  color: white;
+}
+
+.dark .dropdown-content a:hover {
+  color: green;
+  background-color: transparent;
+}
+
+.dark .blog {
+  background-color: black;
+}
+
+.dark .blog .blog-header {
+  color: white;
+}
+
+.dark .blog .container .row .card .card-body {
+  background-color: darkgray;
+}
+
+.dark .blog .container .row .card .card-body .card-name {
+  color: white;
+}
+
+.dark .contact {
+  background-color: black;
+}
+
+.dark .contact .container .contact-header h1 {
+  color: white;
+}
+
+.dark .contact .container .row .contact-right .address .address-content h3 {
+  color: white;
+}
+
+.dark .contact .container .row .form-group input {
+  background-color: darkgray;
+}
+
+.dark .contact .container .row .form-group input::placeholder {
+  color: white;
+}
+
+.dark .contact .container .row .form-group textarea {
+  color: white;
+  background-color: darkgray;
+}
+
+.dark .contact .container .row .form-group textarea::placeholder {
+  color: white;
+}
+
+/* Banner CSS */
 
 .banner {
   margin-top: 90px;
@@ -93,6 +326,8 @@ ul {
   font-size: 15px;
   margin-right: 5px;
 }
+
+/* Blog Posts CSS */
 
 .blog {
   background-color: whitesmoke;
@@ -180,6 +415,8 @@ h6 {
   margin-top: 15px;
 }
 
+/* Contact Page CSS */
+
 .contact {
   padding: 50px 0;
 }
@@ -254,6 +491,8 @@ h6 {
 .contact .container .row .contact-right .address .address-content p a {
   color: gray;
 }
+
+/* Footer CSS */
 
 .footer-background-color {
   padding-top: 50px;
