@@ -1196,6 +1196,10 @@ footer a:hover {
         height: auto;
     }
 
+    .navbar .navbar-brand {
+        font-size: 30px;
+    }
+
     .navbar .navbar-toggler {
         padding: 0;
     }
@@ -1257,7 +1261,7 @@ footer a:hover {
     }
 
     .pcCarousel__banner {
-        margin-top: 77px;
+        margin-top: 72px;
     }
 
     /* PROOF */
