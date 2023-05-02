@@ -160,7 +160,7 @@ i {
 .fa-moon {
   display: block;
   color: black;
-  transition: all 0.5s ease;
+  transition: all 0.9s ease;
 }
 
 .fa-moon:hover {
@@ -228,23 +228,35 @@ i {
 }
 
 .dark .blog {
-  background-color: black;
+  background-color: rgb(40, 40, 40);
 }
 
 .dark .blog .blog-header {
   color: white;
 }
 
+.dark .blog .container .row .card {
+  border-style: none;
+}
+
 .dark .blog .container .row .card .card-body {
-  background-color: darkgray;
+  background-color: black;
 }
 
 .dark .blog .container .row .card .card-body .card-name {
   color: white;
 }
 
+.dark .blog .container .row .card .card-body .card-title {
+  color: white;
+}
+
+.dark .blog .container .row .card .card-body .card-date {
+  color: white;
+}
+
 .dark .contact {
-  background-color: black;
+  background-color: rgb(40, 40, 40);
 }
 
 .dark .contact .container .contact-header h1 {
@@ -257,6 +269,7 @@ i {
 
 .dark .contact .container .row .form-group input {
   background-color: darkgray;
+  border-style: none;
 }
 
 .dark .contact .container .row .form-group input::placeholder {
@@ -266,6 +279,7 @@ i {
 .dark .contact .container .row .form-group textarea {
   color: white;
   background-color: darkgray;
+  border-style: none;
 }
 
 .dark .contact .container .row .form-group textarea::placeholder {
@@ -305,6 +319,7 @@ i {
   font-size: 50px;
   font-weight: 600;
   color: white;
+  margin-left: 20px;
 }
 
 .banner .container ul {
@@ -340,11 +355,17 @@ i {
 
 .blog .container .blog-header p {
   color: red;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
 }
 
 .h1,
 h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
 }
 
 .h1,
@@ -365,6 +386,13 @@ h6 {
   line-height: 1.2;
 }
 
+.blog .container .row .card:hover {
+  opacity: 1;
+  transform: translateY(-5%);
+  box-shadow: 0 10px 20px rgba(69, 113, 78, 0.3);
+  transition: 0.5s;
+}
+
 .blog .container .row .card .card-body .card-name {
   display: block;
   font-size: 26px;
@@ -376,6 +404,10 @@ h6 {
 
 .blog .container .row .card .card-body .card-title {
   color: gray;
+}
+
+.blog .container .row .card .card-body .card-date:hover {
+  color: red;
 }
 
 .blog .container .row .card .card-body .card-date span {
@@ -415,6 +447,53 @@ h6 {
   margin-top: 15px;
 }
 
+nav {
+  display: block;
+}
+
+.page-pagination li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+
+span.page-numbers {
+  display: block;
+  text-align: center;
+  border: 0;
+  color: black;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+a.page-numbers {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  display: block;
+  text-align: center;
+  margin: 0 5px;
+}
+
+a.page-numbers:hover {
+  color: green;
+}
+
 /* Contact Page CSS */
 
 .contact {
@@ -423,6 +502,10 @@ h6 {
 
 .contact .container .contact-header h1 {
   color: black;
+}
+
+.contact .container .row {
+  margin-top: 50px;
 }
 
 .contact .container .row .form-group {
@@ -435,7 +518,7 @@ h6 {
   width: 100%;
   border: 1px solid white;
   color: black;
-  background-color: lightgrey;
+  background-color: rgb(233, 232, 232);
   padding: 15px 20px;
   margin-bottom: 20px;
   outline: none;
@@ -446,7 +529,7 @@ h6 {
   padding: 30px 20px;
   width: 100%;
   border: 1px solid white;
-  background-color: lightgrey;
+  background-color: rgb(233, 232, 232);
   color: black;
   overflow: hidden;
   outline: none;
@@ -460,6 +543,7 @@ h6 {
   border-radius: 10px;
   float: right;
   margin-top: 20px;
+  border-style: none;
 }
 
 .contact .container .row .contact-right .address {
