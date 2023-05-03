@@ -182,6 +182,11 @@ header {
     width: 112px;
 }
 
+.dropdown-menu a.dropdown-item.active {
+    background-color: transparent;
+    color: #189a46;
+}
+
 .dropdown-menu[data-bs-popper] {
     left: -34px;
 }
@@ -1088,6 +1093,87 @@ footer a:hover {
 }
 /************ CONTACT END **************/
 
+/************************ BLOG POSTS **************************/
+.posts {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.posts__card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.posts__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+
+.posts__card img {
+    border-radius: 0;
+}
+
+.posts__card__bot {
+    padding: 30px 20px;
+}
+
+.posts__card__bot h3 a {
+    color: #000c04;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 6px;
+    transition: all .5s;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.posts__card__bot h3 a:hover {
+    color: #189a46;
+}
+
+.posts__card__author {
+    color: #999;
+}
+
+.posts__card__author a {
+    color: #000c04;
+    font-size: 18px;
+    line-height: 28px;
+    transition: all .5s;
+}
+
+.posts__card__author a:hover {
+    color: #f53626;
+}
+
+.posts .pagination .page-link {
+    background-color: transparent; 
+    color: #000c04;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding-left: 0;
+    padding-right: 1rem;
+    transition: all .5s;
+}
+
+.posts .page-item.active .page-link {
+    color: #189a46;
+}
+
+.posts .page-link:hover  {
+    color: #189a46;
+}
+
+.posts .page-link:focus {
+    box-shadow: none;
+}
+
 /************* DARK MODE START *************/
 
 /* Dark Global */
@@ -1276,6 +1362,44 @@ footer a:hover {
 .dark .contact__info h3 {
     color: #ddd;
 }
+
+/* Dark Posts */
+.dark .posts {
+    background-color: #222;
+}
+
+.dark .posts__card{
+    background-color: #151515;
+}
+
+.dark .posts__card__bot h3 a {
+    color: #ddd;
+}
+
+.dark .posts__card__author a {
+    color: #ddd;
+}
+
+.dark .posts__card__bot h3 a:hover {
+    color: #189a46;
+}
+
+.dark .posts__card__author a:hover {
+    color: #f53626;
+}
+
+.dark .posts .pagination .page-link {
+    color: #ddd;
+}
+
+.dark .posts .page-link:hover {
+    color: #189a46;
+}
+
+.dark .posts .page-item.active .page-link {
+    color: #189a46;
+}
+
 /************* DARK MODE END *************/
 
 /************* RESPONSIVE START*************/
@@ -1297,7 +1421,7 @@ footer a:hover {
     /* GLOBAL */
     .title .main-title {
         font-size: 35px;
-        line-height: 40px;
+        line-height: 45px;
     }
 
     /* HEADER */
