@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Poochcare Animals and pets</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/shutterstock_1585340284.jpg" type="image/x-icon">
+    <!-- link lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lg-transitions.min.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FontAwesome 6.4.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
+    <!-- lightbox css  -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/Gallery.css">
+</head>
+
+<body id="body">
+    <header>
+        <div class="container-md">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <a class="navbar-brand" href="./index.html">Pooch Care</a>
+                <button class="navbar-toggler ms-auto collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars icon-expand"></i>
+                    <i class="fa fa-times icon-close"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About_Page/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <i class="fa fa-angle-down"></i>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./blog_posts/page/1/blog_posts.html">Blog Posts</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./landing_page/landing_page.html">Landing Page</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact_page/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item headerSearch">
+                            <a href="#search" class="btn btn__icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <div id="search" class="pop-overlay">
+                                <div class="search__popup">
+                                    <form action="#" method="get" class="d-flex">
+                                        <input type="search" name="search" placeholder="Search ..." required autofocus>
+                                        <button type="submit">Search</button>
+                                        <a class="close" href="#url">×</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <button class="btn mobile-position" id="switchButton">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+                <!-- toggle switch for light and dark theme -->
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- BREADCRUMB -->
+        <section class="pcBreadcrumb">
+            <div class="pcBreadcrumb__content text-center">
+                <h1>Gallery</h1>
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0 mt-2">
+                        <li class="breadcrumb-item"><a href="./../index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">&nbsp;&nbsp;»&nbsp;&nbsp;Gallery Page</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section class="gallery py-5">
+            <div class="gallery__gallery py-md-4 py-3">
+                <div class="container gallery__content">
+                    <div class="gallery__top text-center mx-auto">
+
+                        <h6 class="sub-title">View Gallery</h6>
+                        <h1 class="hny-title">Latest Gallery</h1>
+
+                    </div>
+                    <div class="gallery__bottom row mt-lg-5 mt-4">
+                        <!-- item1 -->
+                        <div class="gallery__item col-md-4 hover14">
+
+                            <a href="./img/dog1.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog1.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog2.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog2.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog7.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog7.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                        </div>
+                        <!-- item2 -->
+                        <div class="gallery__item col-md-4 hover14">
+
+                            <a href="./img/dog3.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog3.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog4-1.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog4-1.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog8.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog8.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                        </div>
+                        <!-- item3 -->
+                        <div class="gallery__item col-md-4 hover14">
+
+                            <a href="./img/dog4.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog4.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog6.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog6.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                            <a href="./img/dog9.jpg" data-lightbox="example-set" class="mb-4"
+                                data-title="lorem ipsum dolor sit amet">
+                                <figure>
+                                    <img src="./img/dog9.jpg" alt="product" class="img-fluid">
+                                </figure>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer__top">
+            <div class="container-md">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="footer__item">
+                            <h5>Contact Information</h5>
+                            <ul>
+                                <li>
+                                    <strong>Address:</strong>
+                                    #135 block, Barnard St. Brooklyn, London 10036, UK
+                                </li>
+                                <li>
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+(12)234-11-24">+(12)234-11-24
+                                    </a>
+                                </li>
+                                <li>
+                                    <strong>Email:</strong>
+                                    <a href="mailto:#">example@mail.com</a>
+                                </li>
+                            </ul>
+                            <div class="social__icon">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-6">
+                        <div class="row">
+                            <div class="col-6 col-sm-4">
+                                <div class="footer__item">
+                                    <h5>Archives</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">December 2020</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="footer__item">
+                                    <h5>Categories</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Animals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pets care</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Uncategoried</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="footer__item">
+                                    <h5>Meta</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Log in</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Entries feed</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Comments feed</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">WordPress.org</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom text-center py-4">
+            <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
+        </div>
+    </footer>
+
+    <!-- Back To Top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- Switch Theme JS -->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("body").classList.toggle("dark");
+        }
+    </script>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-- Waypoints Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    </script>
+
+
+    <!-- <script>$(document).ready(function() {
+    $("#lightgallery").lightGallery(); 
+});
+</script> -->
+
+    <!-- Owl Carousel JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-one').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true
+                    }
+                }
+            })
+        })
+    </script>
+
+    <!-- Count Up -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- lightbox  -->
+    <script src="./js/lightbox.min.js"></script>
+    <!-- Back To Top -->
+    <script src="./js/main-BackToTop.js"></script>
+    <script src="./js/util.js"></script>
+</body>
+
+</html>
