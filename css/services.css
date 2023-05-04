@@ -350,6 +350,9 @@ main h1 {
     line-height: 60px;
 }
 /* ----------DOG----------- */
+.sum__dog {
+    padding-bottom: 50px;
+}
 .dog {
     background-color: white;
     
