@@ -306,7 +306,24 @@
     <!-- Switch Theme JS -->
     <script>
         document.getElementById("switchButton").onclick = function () {
-            document.getElementById("body").classList.toggle("dark");
+            var setTheme = document.body
+            setTheme.classList.toggle("dark");
+
+            var theme;
+            if(setTheme.classList.contains('dark')){
+                console.log('Dark mode');
+                theme = 'DARK'
+            }else{
+                console.log('Light mode');
+                theme = 'LIGHT'
+            }
+
+            localStorage.setItem('PageTheme', JSON.stringify(theme));
+        }
+        let getTheme = JSON.parse(localStorage.getItem('PageTheme'));
+        console.log(getTheme);
+        if(getTheme === 'DARK'){
+            document.body.classList = 'dark';
         }
     </script>
 
