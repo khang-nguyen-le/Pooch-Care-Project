@@ -370,7 +370,7 @@ main h1 {
     padding: 50px 0;
     
 }
-.row {
+.dog .row {
     align-items: center;
 }
 .pd {
@@ -430,58 +430,6 @@ width: 100%;
 .dog__content .dog__text .read:hover {
     color: #189a46;
 }
-/* ======Trang blog nhanh con======= Start  */
-/* .text__top .tag li a {
-        display: inline-block;
-    border-radius: 6px;
-    color: white;
-    font-size: 14px;
-    padding: 4px 10px;
-    font-weight: 600;
-    background: #189a46;
-    margin: 5px 0;
-}
-main h3 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-}
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    color: #000c04;
-  
-}
-.fa-clock-o:before {
-    content: "";
-    color: #000c04;
-}
-.text__blog li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-.text__blog {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
- .text__blog a {
-    margin: 0;
-    color: #000c04;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-}
-.text__blog a:hover {
-    color: #f53626;
-}
-.blog__img img{
-    width: 100%;
-    height: 100%;
-} */
 
 /************ FOOTER START **************/
 footer {
@@ -535,7 +483,6 @@ footer a:hover {
 }
 
 /************ FOOTER END **************/
-
 /************ BACK-TO-TOP START **************/
 .backToTop {
     display: block;
@@ -885,3 +832,5 @@ footer a:hover {
         font-size: 17px;
     }
 }
+
+/************* RESPONSIVE END *************/
